@@ -1,0 +1,17 @@
+d:\WPF\WordTest\WordTest\WpfApp1\obj\Debug\WpfApp1.csprojAssemblyReference.cache
+d:\WPF\WordTest\WordTest\WpfApp1\obj\Debug\MainWindow.g.cs
+d:\WPF\WordTest\WordTest\WpfApp1\obj\Debug\App.g.cs
+d:\WPF\WordTest\WordTest\WpfApp1\obj\Debug\MainWindow.baml
+d:\WPF\WordTest\WordTest\WpfApp1\obj\Debug\WpfApp1.csproj.GenerateResource.cache
+d:\WPF\WordTest\WordTest\WpfApp1\obj\Debug\WpfApp1.csproj.CoreCompileInputs.cache
+d:\WPF\WordTest\WordTest\WpfApp1\obj\Debug\Line.g.cs
+d:\WPF\WordTest\WordTest\WpfApp1\obj\Debug\Line.baml
+d:\WPF\WordTest\WordTest\WpfApp1\bin\Debug\WordTest.exe.config
+d:\WPF\WordTest\WordTest\WpfApp1\bin\Debug\WordTest.exe
+d:\WPF\WordTest\WordTest\WpfApp1\bin\Debug\WordTest.pdb
+d:\WPF\WordTest\WordTest\WpfApp1\obj\Debug\WordTest_MarkupCompile.cache
+d:\WPF\WordTest\WordTest\WpfApp1\obj\Debug\WordTest_MarkupCompile.lref
+d:\WPF\WordTest\WordTest\WpfApp1\obj\Debug\WordTest.g.resources
+d:\WPF\WordTest\WordTest\WpfApp1\obj\Debug\WordTest.Properties.Resources.resources
+d:\WPF\WordTest\WordTest\WpfApp1\obj\Debug\WordTest.exe
+d:\WPF\WordTest\WordTest\WpfApp1\obj\Debug\WordTest.pdb

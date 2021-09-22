@@ -1,0 +1,94 @@
+﻿<Window x:Class="WpfApp1.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp1"
+        AllowsTransparency="True"
+        WindowStyle="None"
+        mc:Ignorable="d"
+        Loaded="Window_Loaded"
+        KeyDown="Window_KeyDown"
+        Title="WordTest" Height="800" Width="1017" Background="{x:Null}" Foreground="White" Icon="Icon.png">
+    <Grid Background="#FF1B1B1B">
+        <Grid Height="25" VerticalAlignment="Top" Background="#FF232323" MouseDown="Grid_MouseDown">
+            <Grid.Effect>
+                <DropShadowEffect Color="#4C000000" Opacity="0.1"/>
+            </Grid.Effect>
+            <Rectangle MouseDown="Rectangle_MouseDown" MouseEnter="Rectangle_MouseEnter" MouseLeave="Rectangle_MouseLeave" HorizontalAlignment="Left" Height="25" Margin="992,0,0,0" VerticalAlignment="Top" Width="25" Fill="#00000000" RenderTransformOrigin="0.493,0.52"/>
+            <Rectangle MouseDown="Rectangle_MouseDown_1" HorizontalAlignment="Left" Height="20" VerticalAlignment="Top" Width="20" RadiusX="25" RadiusY="25" Stroke="#FF464646" RenderTransformOrigin="1.233,2.167" Margin="2,2,0,0" Fill="#00000000" StrokeThickness="2"/>
+            <Grid x:Name="MenuBar" HorizontalAlignment="Left" Height="25" Margin="102,0,0,0" VerticalAlignment="Top" Width="768">
+                <TextBlock MouseEnter="TextBlock_MouseEnter" MouseLeave="TextBlock_MouseLeave" MouseDown="TextBlock_MouseDown_6" HorizontalAlignment="Left" TextWrapping="Wrap" Text="Save" VerticalAlignment="Top" Height="23" Width="85" FontSize="16" TextAlignment="Center" FontFamily="/WordTest;component/Fonts/#LEMON MILK Light" Foreground="White"/>
+                <TextBlock MouseEnter="TextBlock_MouseEnter" MouseLeave="TextBlock_MouseLeave" MouseDown="TextBlock_MouseDown_7" HorizontalAlignment="Left" TextWrapping="Wrap" Text="Load" VerticalAlignment="Top" Height="23" Width="85" FontSize="16" TextAlignment="Center" FontFamily="/WordTest;component/Fonts/#LEMON MILK Light" Margin="85,0,0,0"/>
+                <TextBlock MouseEnter="TextBlock_MouseEnter" MouseLeave="TextBlock_MouseLeave" MouseDown="TextBlock_MouseDown_4" HorizontalAlignment="Left" TextWrapping="Wrap" Text="Apply" VerticalAlignment="Top" Height="23" Width="85" FontSize="16" TextAlignment="Center" FontFamily="/WordTest;component/Fonts/#LEMON MILK Light" Margin="170,0,0,0"/>
+                <TextBlock MouseEnter="TextBlock_MouseEnter" MouseLeave="TextBlock_MouseLeave" MouseDown="TextBlock_MouseDown_5" HorizontalAlignment="Left" TextWrapping="Wrap" Text="Reset" VerticalAlignment="Top" Height="23" Width="85" FontSize="16" TextAlignment="Center" FontFamily="/WordTest;component/Fonts/#LEMON MILK Light" Margin="255,0,0,0"/>
+                <TextBlock MouseEnter="TextBlock_MouseEnter" MouseLeave="TextBlock_MouseLeave" MouseDown="TextBlock_MouseDown_8" HorizontalAlignment="Left" TextWrapping="Wrap" Text="Mix" VerticalAlignment="Top" Height="23" Width="85" FontSize="16" TextAlignment="Center" FontFamily="/WordTest;component/Fonts/#LEMON MILK Light" Margin="340,0,0,0"/>
+                <TextBlock MouseEnter="TextBlock_MouseEnter" MouseLeave="TextBlock_MouseLeave" MouseDown="TextBlock_MouseDown_9" HorizontalAlignment="Left" TextWrapping="Wrap" Text="Check" VerticalAlignment="Top" Height="23" Width="85" FontSize="16" TextAlignment="Center" FontFamily="/WordTest;component/Fonts/#LEMON MILK Light" Margin="425,0,0,0"/>
+            </Grid>
+        </Grid>
+        <Grid x:Name="SelectBar" HorizontalAlignment="Left" Height="775" Margin="0,25,0,0" VerticalAlignment="Top" Width="102" Background="#00282828" Grid.RowSpan="2">
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition Height="0*"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="0*"/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <Grid.Effect>
+                <DropShadowEffect Color="#4C000000" Opacity="0.1"/>
+            </Grid.Effect>
+            <Rectangle Grid.ColumnSpan="2" Fill="#FF282828" HorizontalAlignment="Left" Height="775" Margin="-52,0,0,0" VerticalAlignment="Top" Width="154" RadiusY="22.5" RadiusX="22.5"/>
+            <TextBlock MouseEnter="TextBlock_MouseEnter" MouseLeave="TextBlock_MouseLeave" MouseDown="TextBlock_MouseDown" HorizontalAlignment="Left" TextWrapping="Wrap" Text="Test1" VerticalAlignment="Top" Height="58" Width="102" FontSize="21" TextAlignment="Center" Padding="0, 15, 0,0" FontFamily="/WordTest;component/Fonts/#LEMON MILK Light" Grid.ColumnSpan="2"/>
+            <TextBlock MouseEnter="TextBlock_MouseEnter" MouseLeave="TextBlock_MouseLeave" MouseDown="TextBlock_MouseDown_1" HorizontalAlignment="Left" TextWrapping="Wrap" Text="Test2" VerticalAlignment="Top" Height="58" Width="102" FontSize="21" TextAlignment="Center" Padding="0, 15, 0,0" Margin="0,58,0,0" FontFamily="/WordTest;component/Fonts/#LEMON MILK Light" Grid.ColumnSpan="2"/>
+            <TextBlock MouseEnter="TextBlock_MouseEnter" MouseLeave="TextBlock_MouseLeave" MouseDown="TextBlock_MouseDown_2" HorizontalAlignment="Left" TextWrapping="Wrap" Text="Result" VerticalAlignment="Top" Height="58" Width="102" FontSize="21" TextAlignment="Center" Padding="0, 15, 0,0" Margin="0,116,0,0" FontFamily="/WordTest;component/Fonts/#LEMON MILK Light" Grid.ColumnSpan="2"/>
+            <TextBlock MouseEnter="TextBlock_MouseEnter" MouseLeave="TextBlock_MouseLeave" MouseDown="TextBlock_MouseDown_3" HorizontalAlignment="Left" TextWrapping="Wrap" Text="Input" VerticalAlignment="Top" Height="58" Width="102" FontSize="21" TextAlignment="Center" Padding="0, 15, 0,0" FontFamily="/WordTest;component/Fonts/#LEMON MILK Light" Grid.ColumnSpan="2" Margin="0,174,0,0"/>
+            <TextBlock MouseEnter="TextBlock_MouseEnter" MouseLeave="TextBlock_MouseLeave" MouseDown="TextBlock_MouseDown_10" HorizontalAlignment="Left" TextWrapping="Wrap" Text="Timer" VerticalAlignment="Top" Height="58" Width="102" FontSize="21" TextAlignment="Center" Padding="0, 15, 0,0" FontFamily="/WordTest;component/Fonts/#LEMON MILK Light" Grid.ColumnSpan="2" Margin="0,232,0,0"/>
+            <Rectangle x:Name="SelectBorder" Grid.ColumnSpan="2" Fill="#331AA1FF" HorizontalAlignment="Left" Height="58" Margin="-7,116,0,0" VerticalAlignment="Top" Width="15" RenderTransformOrigin="0.5,0.5" RadiusY="6.833" RadiusX="6.833">
+                <Rectangle.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform ScaleX="-1"/>
+                        <SkewTransform/>
+                        <RotateTransform/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Rectangle.RenderTransform>
+            </Rectangle>
+        </Grid>
+        <Grid x:Name="_Panel_Test" Visibility="Hidden" HorizontalAlignment="Left" Height="775" Margin="102,25,0,0" VerticalAlignment="Top" Width="915" Grid.RowSpan="2"/>
+        <Grid x:Name="_Panel_Random" Visibility="Hidden" HorizontalAlignment="Left" Height="775" Margin="102,25,0,0" VerticalAlignment="Top" Width="915" Grid.RowSpan="2"/>
+        <Grid x:Name="_Panel_Result" HorizontalAlignment="Left" Height="775" Margin="102,25,0,0" VerticalAlignment="Top" Width="915" Grid.RowSpan="2" Background="#001E1E1E">
+            <Label x:Name="CountL" Content="0/22" HorizontalAlignment="Left" Margin="839,14,0,0" VerticalAlignment="Top" FontSize="25" Foreground="White" FontFamily="/WordTest;component/Fonts/#Roboto"/>
+            <TextBox Visibility="Hidden" BorderThickness="0,0,0,0" x:Name="CountTB" HorizontalAlignment="Left" Height="40" Margin="800,54,0,0" TextWrapping="Wrap" Text="22" VerticalAlignment="Top" Width="87" Background="#0CFFFFFF" Foreground="White" BorderBrush="{x:Null}" FontFamily="/WordTest;component/Fonts/#Roboto" FontSize="30" CaretBrush="White"/>
+            <Rectangle MouseDown="Rectangle_MouseDown_3" Fill="#19FF9B9B" HorizontalAlignment="Left" Height="17" Margin="892,54,0,0" RadiusY="2" RadiusX="2" VerticalAlignment="Top" Width="17"/>
+            <Rectangle MouseDown="Rectangle_MouseDown_4" Fill="#19E8FF9C" HorizontalAlignment="Left" Height="17" Margin="892,76,0,0" RadiusY="2" RadiusX="2" VerticalAlignment="Top" Width="17"/>
+        </Grid>
+        <Grid x:Name="_Panel_Input" Visibility="Hidden" HorizontalAlignment="Left" Height="775" Margin="102,25,0,0" VerticalAlignment="Top" Width="915" Grid.RowSpan="2"/>
+        <Grid x:Name="_Panel_Timer" Visibility="Hidden" HorizontalAlignment="Left" Height="775" Margin="102,25,0,0" VerticalAlignment="Top" Width="915">
+            <Grid x:Name="timerP" HorizontalAlignment="Left" Height="448" Margin="243,154,0,0" VerticalAlignment="Top" Width="492">
+                <Rectangle x:Name="timerR" Fill="#FF272727" HorizontalAlignment="Left" Height="436" Margin="0,0,0,0" VerticalAlignment="Top" Width="464" RadiusY="83" RadiusX="83">
+                    <Rectangle.Effect>
+                        <DropShadowEffect ShadowDepth="0" BlurRadius="15" Opacity="0.2"/>
+                    </Rectangle.Effect>
+                </Rectangle>
+                <Rectangle Fill="#33000000" HorizontalAlignment="Left" Height="117" Margin="16,78,0,0" RadiusY="25" RadiusX="25" VerticalAlignment="Top" Width="432"/>
+                <Label x:Name="timerL" Content="00:00:00" HorizontalAlignment="Left" Margin="20,76,0,0" VerticalAlignment="Top" Foreground="#19E7FFE9" FontFamily="/WordTest;component/Fonts/#Ticking Timebomb BB" FontSize="130" Width="422" Height="117" Background="{x:Null}"/>
+                <Rectangle MouseDown="statusRt_MouseDown" x:Name="statusRt" Fill="#FF8CE263" HorizontalAlignment="Left" Height="108" Margin="314,244,0,0" RadiusY="25" RadiusX="25" VerticalAlignment="Top" Width="128"/>
+                <TextBlock MouseDown="statusRt_MouseDown" x:Name="statusL" HorizontalAlignment="Left" Margin="328,276,0,0" TextWrapping="Wrap" Text="START" VerticalAlignment="Top" Height="50" Width="100" FontSize="50" FontFamily="HYShortSamul"/>
+                <Rectangle MouseDown="Rectangle_MouseDown_2" Fill="#FFEBF170" HorizontalAlignment="Left" Height="108" Margin="20,244,0,0" RadiusY="25" RadiusX="25" VerticalAlignment="Top" Width="128"/>
+                <TextBlock MouseDown="Rectangle_MouseDown_2" HorizontalAlignment="Left" Margin="34,276,0,0" TextWrapping="Wrap" Text="RESET" VerticalAlignment="Top" Height="50" Width="100" FontSize="50" FontFamily="HYShortSamul" Foreground="White"/>
+            </Grid>
+        </Grid>
+        <Grid Visibility="Hidden" MouseEnter="_Panel_Line_MouseEnter_1" MouseLeave="_Panel_Line_MouseLeave_1" x:Name="_Panel_Line" HorizontalAlignment="Left" Height="166" Margin="946,634,0,0" VerticalAlignment="Top" Width="70" Background="#00FF0000">
+            <Grid MouseEnter="_Panel_Line_MouseEnter" MouseLeave="_Panel_Line_MouseLeave" x:Name="MinusP" HorizontalAlignment="Left" Height="50" Margin="10,105,0,0" VerticalAlignment="Top" Width="50">
+                <Rectangle x:Name="MinusRect" MouseEnter="_Panel_Line_MouseEnter" MouseLeave="_Panel_Line_MouseLeave" Fill="#FF282828" HorizontalAlignment="Left" Height="50" Width="50" VerticalAlignment="Top"  RadiusY="49.5" RadiusX="49.5" Margin="0,0,0,0"/>
+                <Image MouseEnter="_Panel_Line_MouseEnter" MouseLeave="_Panel_Line_MouseLeave" HorizontalAlignment="Left" Height="24" Width="24" VerticalAlignment="Top"  Source="minus.png" Margin="13,13,0,0"/>
+            </Grid>
+            <Grid MouseEnter="AddP_MouseEnter" MouseLeave="AddP_MouseLeave" x:Name="AddP" HorizontalAlignment="Left" Height="50" Margin="10,105,0,0" VerticalAlignment="Top" Width="50">
+                <Rectangle x:Name="AddRect" MouseEnter="AddP_MouseEnter" MouseLeave="AddP_MouseLeave" Fill="#FF282828" HorizontalAlignment="Left" Height="50" Width="50" VerticalAlignment="Top"  RadiusY="49.5" RadiusX="49.5" Margin="0,0,0,0"/>
+                <Image MouseEnter="AddP_MouseEnter" MouseLeave="AddP_MouseLeave" HorizontalAlignment="Left" Height="24" Width="24" VerticalAlignment="Top"  Source="plus.png" Margin="13,13,0,0"/>
+            </Grid>
+        </Grid>
+        <Grid x:Name="_Panel_Alert" HorizontalAlignment="Left" Height="50" Margin="607,740,0,0" VerticalAlignment="Top" Width="400"/>
+    </Grid>
+</Window>
